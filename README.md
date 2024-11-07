@@ -33,12 +33,14 @@
 
 1. قم بتثبيت التبعيات باستخدام الأمر `npm install`.
 2. أنشئ ملف `.env` في جذر المشروع وأضف مفاتيح البيئة المطلوبة:
-   ```env
-   VITE_PUBLIC_APP_ID=YOUR_PUBLIC_APP_ID
-   VITE_PUBLIC_SENTRY_DSN=YOUR_SENTRY_DSN
-   VITE_PUBLIC_APP_ENV=production
-   TEXT_TO_SPEECH_API_KEY=YOUR_TEXT_TO_SPEECH_API_KEY
-   ```
+
+```env
+VITE_PUBLIC_APP_ID=YOUR_PUBLIC_APP_ID
+VITE_PUBLIC_SENTRY_DSN=YOUR_SENTRY_DSN
+VITE_PUBLIC_APP_ENV=production
+TEXT_TO_SPEECH_API_KEY=YOUR_TEXT_TO_SPEECH_API_KEY
+```
+
 3. ابدأ التطبيق في وضع التطوير باستخدام الأمر `npm run dev`.
 
 ## الملاحظات

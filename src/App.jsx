@@ -1,4 +1,4 @@
-import { createSignal, onMount, Show } from 'solid-js';
+import { createSignal, Show } from 'solid-js';
 
 function App() {
   const [textInput, setTextInput] = createSignal('');
