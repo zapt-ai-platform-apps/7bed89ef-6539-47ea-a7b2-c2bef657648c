@@ -6,7 +6,6 @@ import { ThemeSupa } from '@supabase/auth-ui-shared';
 function App() {
   const [user, setUser] = createSignal(null);
   const [currentPage, setCurrentPage] = createSignal('login');
-  const [loading, setLoading] = createSignal(false);
 
   const checkUserSignedIn = async () => {
     const { data: { user } } = await supabase.auth.getUser();
@@ -41,7 +40,7 @@ function App() {
   };
 
   return (
-    <div class="min-h-screen bg-gradient-to-br from-purple-100 to-blue-100 p-4 text-gray-800">
+    <div class="h-full bg-gradient-to-br from-purple-100 to-blue-100 p-4 text-gray-800">
       <Show
         when={currentPage() === 'homePage'}
         fallback={
@@ -69,7 +68,7 @@ function App() {
           </div>
         }
       >
-        <div class="max-w-6xl mx-auto">
+        <div class="max-w-6xl mx-auto h-full">
           <div class="flex justify-between items-center mb-8">
             <h1 class="text-4xl font-bold text-purple-600">مرحبًا بك في التطبيق</h1>
             <button
@@ -80,7 +79,7 @@ function App() {
             </button>
           </div>
 
-          <div class="bg-white p-6 rounded-lg shadow-md">
+          <div class="bg-white p-6 rounded-lg shadow-md h-full">
             <h2 class="text-2xl font-bold mb-4 text-purple-600">الميزات الرئيسية</h2>
             <p class="text-gray-700">مرحبًا {user().email}، يمكنك الآن استخدام التطبيق بكل سهولة.</p>
             {/* يمكنك إضافة المزيد من الميزات هنا */}
