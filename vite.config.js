@@ -9,8 +9,5 @@ export default defineConfig({
   },
   resolve: {
     conditions: ['development', 'browser'],
-  },
-  optimizeDeps: {
-    exclude: ["@sentry/browser"]
   }
 });
